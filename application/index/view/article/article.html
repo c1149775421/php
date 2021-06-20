@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ThinkPHP</title>
+        <meta name="keywords" content="ThinkPHP" />
+        <meta name="description" content="ThinkPHP" />
+        <meta name="mobile-agent" content="format=html5; url=http://m.zx.wed114.cn/shenghuo/20160920156214.html" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+		<link href="__PUBLIC__/css/lady.css" type="text/css" rel="stylesheet" />
+		<link href="__PUBLIC__/bootstrap/bootstrap.css" type="text/css" rel="stylesheet" />
+		<script type='text/javascript' src='__PUBLIC__/js/ismobile.js'></script>
+    </head>
+
+    <body>
+
+      {include file="common/header"}
+
+        <!--顶部通栏-->
+        <script src='/jiehun/goto/my-65547.js' language='javascript'></script>
+
+        <div class="overall">
+            <div class="left">
+                <div class="scrap">
+                    <h1>{$article.title}</h1>
+                    <div class="spread">
+                        <span class="writor">发布时间：{$article.time}</span>
+                        <span class="writor">编辑：{$article.author}</span>
+                        <span class="writor">标签：<a href='/jiehun/z97712.html'>{$article.keywords}</a></span>
+                        <span class="writor">热度：{$article.click}<script src="/jiehun/plus/count.php?view=yes&aid=156214&mid=55" type='text/javascript' language="javascript"></script></span>
+                    </div>
+                </div>
+
+                <!--百度分享-->
+                <script src='/jiehun/goto/my-65542.js' language='javascript'></script>
+
+                <div class="takeaway">
+                    <span class="btn arr-left"></span>
+                    <p class="jjxq">{$article.des}</p>
+                    <span class="btn arr-right"></span>
+                </div>
+
+                  <script src='/jiehun/goto/my-65541.js' language='javascript'></script>
+
+                <div class="substance">
+				<img src="__IMG__/{$article.pic}" style="width:100%">
+				{$article.content}
+				
+				</div>
+
+
+                <div class="biaoqian">
+                   
+                </div>
+
+            </div>
+
+   <!--右边right-->
+   {include file="common/right"}
+</div>
+      <!--页脚footer-->
+      {include file="common/footer"}
+
+    </body>
+</html>

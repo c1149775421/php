@@ -1,0 +1,26 @@
+        <div class="ladytop" style="height:60px;padding:15px 0;overflow: hidden;">
+            <div class="nav" >
+                <div class="left"><a href="https://www.kancloud.cn/manual/thinkphp5/118003"><img src="__PUBLIC__/images/hunshang.png" alt="完全开发手册"></a></div>
+                <div class="right">
+                <div class="box">
+				<a href="{:url('Index/index')}" rel='dropmenu209'>主页</a>
+				{foreach name="cates" item="ca"}	
+                 <a href="{:url('Cate/cate',array('id'=>$ca.id))}"  rel='dropmenu209'>{$ca.catename}</a> 
+				{/foreach} 
+                 </div>
+                </div>
+            </div>
+        </div>
+
+<div class="hotmenu">
+	<div class="con">热门标签：<a href='#'>奇闻趣事</a> 
+	<a href='#'>生活妙招</a> 
+	<a href='#'>星座</a> 
+	<a href='#'>亲子</a> 
+	<a href='#'>汽车</a> 
+	<a href='#'>宠物百科</a>
+	<a href='#'>家居</a>
+	<a href="__URL__/public/index.php/admin/login/login.html" 
+	style="float:right;font-weight:bold;font-size:20px;">登录</a>
+	</div>
+</div>

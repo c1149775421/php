@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>ThinkPHP</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="ThinkPHP" />
+
+<meta name="description" content="ThinkPHP" /> 
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<link href="__PUBLIC__/css/lady.css" type="text/css" rel="stylesheet" />
+
+<link href="__PUBLIC__/bootstrap/bootstrap.css" type="text/css" rel="stylesheet" />
+
+<script type='text/javascript' src='__PUBLIC__/js/ismobile.js'></script>   
+
+<style>
+
+	
+
+ </style> 
+
+</head>
+
+
+
+<body>
+
+
+
+{include file="common/header"}
+
+
+
+<!--顶部通栏-->
+
+
+
+
+
+<div class="position"></div>
+
+
+
+<div class="overall">
+
+
+
+	<div class="left">
+
+		     {foreach name="articles" item="ar"}
+
+				<div class="xnews2">
+
+				<div class="pic"><a target="_blank" href="{:url('Article/article',array('id'=>$ar.id))}"><img src="__IMG__/{$ar.pic}" alt="{$ar.title}"/></a></div>
+
+				<div class="dec">
+
+				<h3><a target="_blank" href="{:url('Article/article',array('id'=>$ar.id))}">{$ar.title}</a></h3>
+
+				<div class="time">发布时间：{$ar.time}</div>
+
+				<p>{$ar.des}</p>
+
+				<div class="time"> </div>
+
+				</div>
+
+				</div>
+
+			{/foreach}	
+
+			
+
+				<div class="pages" style="height:60px;">
+				<!-- 分页 -->
+				{$articles->render()}
+
+				</div>
+
+	</div>
+
+	
+
+<!--右边right--->
+
+{include file="common/right"}
+
+	
+
+</div>
+
+
+
+<!--版权底部footer-->
+
+{include file="common/footer"}
+
+
+
+</body>
+
+</html>
